@@ -1,0 +1,114 @@
+body {
+  font-family: "Manrope", sans-serif;
+  background-color: hsl(218, 23%, 16%);
+}
+
+.advice__text {
+  font-size: 1.75rem;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+}
+
+.advice {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: hsl(217, 19%, 24%);
+  border-radius: 0.625rem;
+  padding-inline: 1.875rem;
+  width: min(90%, 31.25rem);
+  padding-block-start: 0.9375rem;
+  box-shadow: 0 0 0.1875rem 0.0625rem hsl(217, 19%, 38%);
+}
+.advice__id {
+  color: hsl(150, 100%, 66%);
+  text-align: center;
+  margin-block: 1.25rem;
+}
+.advice__id h4 {
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 0.3125rem;
+  font-weight: 600;
+}
+.advice__id span {
+  font-weight: 600;
+}
+.advice__text {
+  color: hsl(193, 38%, 86%);
+  font-weight: 800;
+  text-align: center;
+  text-wrap: balance;
+}
+.advice__divider {
+  margin-block: 1.5625rem;
+  width: 90%;
+}
+.advice__icon {
+  background-color: hsl(150, 100%, 66%);
+  border-radius: 1.5625rem;
+  padding-inline: 0.9375rem;
+  padding-block: 0.9375rem;
+  width: fit-content;
+  margin-block-start: 0.625rem;
+  cursor: pointer;
+  position: relative;
+  bottom: -1.5625rem;
+}
+.advice__icon:hover {
+  box-shadow: 0px 0px 0.9375rem 0px hsl(150, 100%, 66%);
+}
+.advice__dice {
+  margin-inline: auto;
+  width: 20px;
+  height: 20px;
+}
+.advice__divider, .advice__icon {
+  margin-inline: auto;
+}
+
+.advice__icon:hover .advice__dice {
+  animation: rotateDice 0.5s ease-in-out 1 alternate;
+}
+
+@keyframes rotateDice {
+  from {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(60deg);
+  }
+  40% {
+    transform: rotate(90deg);
+  }
+  60% {
+    transform: rotate(180deg);
+  }
+  80% {
+    transform: rotate(270deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.attribution {
+  font-size: 0.6875rem;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  color: hsl(193, 38%, 86%);
+}
+.attribution a {
+  color: hsl(150, 100%, 66%);
+  text-decoration: none;
+}/*# sourceMappingURL=style.css.map */

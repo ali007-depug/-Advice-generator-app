@@ -1,0 +1,14 @@
+@use "./abstrct/" as *;
+.attribution{
+    font-size: rem(11);
+    // margin-inline:auto ;
+    position: absolute;
+    left: 50%;
+    bottom: 0;  
+    transform: translateX(-50%);
+    color: $light-cyan;
+    a{
+        color: $neon-green;
+        text-decoration: none;
+    }
+}

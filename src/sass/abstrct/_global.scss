@@ -1,0 +1,10 @@
+@use "functions" as *;
+@use "vars" as *;
+body{
+    font-family: 'Manrope',sans-serif;
+    background-color: $dark-blue;
+}
+
+.advice__text{
+    font-size: rem(28);
+}
